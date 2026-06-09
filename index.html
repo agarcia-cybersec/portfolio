@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AGD | Cybersecurity</title>
+    <meta name="description" content="Portfolio">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="custom-cursor" id="custom-cursor"></div>
+    <div class="custom-cursor-dot" id="custom-cursor-dot"></div>
+
+    
+    <canvas id="cyber-bg"></canvas>
+
+    
+    <header class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo" id="nav-logo">
+                <span class="bracket">&lt;</span><span class="logo-text">a.garcia</span><span class="bracket">/&gt;</span>
+            </a>
+            <nav class="nav-menu" id="nav-menu">
+                <a href="#about" class="nav-link">Sobre Mí</a>
+                <a href="#experience" class="nav-link">Experiencia</a>
+                <a href="#academic" class="nav-link">Formación</a>
+                <a href="#certifications" class="nav-link">Certificaciones</a>
+                <a href="#projects" class="nav-link">Proyectos</a>
+                <a href="#contact" class="nav-link nav-cta">Contacto</a>
+            </nav>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menú">
+                <span class="hamburger"></span>
+            </button>
+        </div>
+    </header>
+
+    
+    <section class="hero-section" id="home">
+        <div class="hero-container">
+            <div class="hero-info">
+                <div class="badge"><span class="pulse-dot"></span> <span id="dynamic-role">Experto en ciberseguridad</span></div>
+                <h1 class="hero-title">Especialista en <span class="highlight">ciberseguridad</span> y <span class="highlight">sistemas en red</span>.</h1>
+                <p class="hero-subtitle">
+                    Apasionado por la ciberseguridad práctica, combinando la mentalidad analítica del hacking ético y la auditoría ofensiva con el rigor metodológico del bastionado de redes y sistemas.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">
+                        <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+                        Ver Proyectos
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                        Establecer Conexión
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="about-section" id="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="sec-title">Sobre Mí</h2>
+                <div class="title-line"></div>
+            </div>
+            <div class="about-content">
+                <p class="bio-text">
+                    Soy un profesional de la tecnología especializado en administración de sistemas informáticos en red y ciberseguridad. Cuento con experiencia práctica en consultoría de seguridad de la información, bastionado de sistemas (hardening) y auditorías de cumplimiento normativo.
+                </p>
+                <p class="bio-text">
+                    Mi perfil combina sólidos fundamentos metodológicos en la gestión de redes e infraestructuras con un enfoque práctico orientado a la detección de vectores de vulnerabilidad, la implantación de políticas defensivas robustas y el despliegue seguro de servicios de acuerdo con los estándares del sector.
+                </p>
+                <p class="bio-text">
+                    Actualmente, me encuentro en formación constante para incrementar mis habilidades en el ámbito del hacking ético y pentesting, tras haberme reafirmado durante mi especialización que esta es una de las ramas de la ciberseguridad que más me entusiasma y en la que deseo profundizar activamente.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="experience-section" id="experience">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="sec-title">Experiencia Profesional</h2>
+                <div class="title-line"></div>
+            </div>
+            
+            <div class="timeline">
+                
+                <div class="timeline-item" id="exp-1">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">Marzo 2023 - Septiembre 2025</div>
+                    <div class="timeline-content">
+                        <div class="timeline-header-block">
+                            <div class="company-logo-placeholder">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                            </div>
+                            <div class="company-meta">
+                                <h3>Cybersecurity Consultant</h3>
+                                <p class="company-name">IndraMind Cybersecurity • Jornada Completa</p>
+                                <span class="location-tag">Alcobendas, Madrid, España (En remoto)</span>
+                            </div>
+                        </div>
+                        <ul class="experience-details">
+                            <li>Diseño y mantenimiento de guías de bastionado para sistemas Linux/Unix y Windows, alineadas con estándares y buenas prácticas de seguridad corporativa.</li>
+                            <li>Desarrollo de scripts de validación automatizada para la verificación del cumplimiento de controles de seguridad mediante Tenable.io.</li>
+                            <li>Planificación, configuración y ejecución de auditorías técnicas de cumplimiento sobre infraestructuras On-Premise y entornos Cloud (AWS, Azure, Google Cloud Platform y Oracle Cloud Infrastructure).</li>
+                            <li>Análisis y explotación de datos de seguridad mediante Splunk para la generación de informes ejecutivos y técnicos orientados al seguimiento del cumplimiento.</li>
+                            <li>Gestión y evaluación de excepciones de seguridad, analizando riesgos y definiendo medidas compensatorias cuando era necesario.</li>
+                            <li>Colaboración con equipos de infraestructura, sistemas y seguridad para la resolución de desviaciones y la mejora continua del nivel de cumplimiento.</li>
+                            <li>Seguimiento de tendencias, vulnerabilidades y nuevas amenazas de ciberseguridad para la actualización de controles y procedimientos de seguridad.</li>
+                            <li>Participación en iniciativas de fortalecimiento de la postura de seguridad corporativa mediante la automatización y optimización de procesos de auditoría y cumplimiento.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                
+                <div class="timeline-item" id="exp-2">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">Junio 2022 - Septiembre 2022</div>
+                    <div class="timeline-content">
+                        <div class="timeline-header-block">
+                            <div class="company-logo-placeholder">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect><rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect><line x1="6" y1="6" x2="6.01" y2="6"></line><line x1="6" y1="18" x2="6.01" y2="18"></line></svg>
+                            </div>
+                            <div class="company-meta">
+                                <h3>Departamento de Ingeniería</h3>
+                                <p class="company-name">Grupo Gestioniza • Jornada Completa</p>
+                                <span class="location-tag">Illescas, Toledo, España</span>
+                            </div>
+                        </div>
+                        <ul class="experience-details">
+                            <li>Realización de estudios y gestión técnica de viabilidades para la implantación de redes de fibra óptica.</li>
+                            <li>Desarrollo integral de proyectos técnicos de despliegue de infraestructuras FTTH y enlaces de interconexión.</li>
+                            <li>Elaboración detallada de planos de situación cartográfica y emplazamientos con formato AsBuilt mediante QGis.</li>
+                            <li>Generación de planos técnicos para redes complejas de perforación horizontal dirigida con AutoCAD, con el fin de obtener la validación técnica requerida por organismos oficiales (Fomento, Adif, Confederaciones Hidrográficas).</li>
+                            <li>Gestión y coordinación de solicitudes de licencias y permisos ante administraciones públicas y entidades sectoriales.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                
+                <div class="timeline-item" id="exp-3">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">Marzo 2021 - Septiembre 2021</div>
+                    <div class="timeline-content">
+                        <div class="timeline-header-block">
+                            <div class="company-logo-placeholder">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"></path></svg>
+                            </div>
+                            <div class="company-meta">
+                                <h3>Departamento de Ingeniería</h3>
+                                <p class="company-name">Gestioniza Infraestructuras • Jornada Completa</p>
+                                <span class="location-tag">Illescas, Toledo, España</span>
+                            </div>
+                        </div>
+                        <ul class="experience-details">
+                            <li>Desarrollo de viabilidades técnicas y estudios de campo previos para el diseño de canalizaciones.</li>
+                            <li>Elaboración de planos cartográficos vectoriales mediante QGis y diseño de trazados viarios en AutoCAD.</li>
+                            <li>Interconexión de fibras y planificación física de nodos ópticos metropolitanos.</li>
+                            <li>Preparación de la documentación formal técnica y solicitud de licencias municipales y sectoriales.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="academic-section" id="academic" style="border-top: 1px solid var(--border); padding-top: 80px;">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="sec-title">Formación Académica</h2>
+                <div class="title-line"></div>
+            </div>
+            <div class="academic-grid">
+                
+                <div class="academic-card">
+                    <div class="academic-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c0 2 2 3 6 3s6-1 6-3v-5"></path></svg>
+                    </div>
+                    <div class="academic-info">
+                        <h4>Curso de Especialización en Ciberseguridad en Entornos TI</h4>
+                        <p>Informática y Comunicaciones | Duración: 720h | 43 ECTS</p>
+                        <span class="tag tag-spec">Grado de Especialización</span>
+                        
+                        <div class="profile-outcomes" style="margin-top: 15px; border-top: 1px solid var(--border); padding-top: 10px;">
+                            <span style="font-family: var(--font-mono); font-size: 0.72rem; color: var(--text-muted); display: block; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px;">Salidas Profesionales:</span>
+                            <ul style="list-style: none; padding-left: 0; display: flex; flex-wrap: wrap; gap: 6px;">
+                                <li style="background: rgba(0, 255, 204, 0.08); border: 1px solid rgba(0, 255, 204, 0.2); color: var(--primary); font-size: 0.78rem; padding: 3px 8px; border-radius: 4px;">Experto en Ciberseguridad</li>
+                                <li style="background: rgba(0, 255, 204, 0.08); border: 1px solid rgba(0, 255, 204, 0.2); color: var(--primary); font-size: 0.78rem; padding: 3px 8px; border-radius: 4px;">Auditor de Ciberseguridad</li>
+                                <li style="background: rgba(0, 255, 204, 0.08); border: 1px solid rgba(0, 255, 204, 0.2); color: var(--primary); font-size: 0.78rem; padding: 3px 8px; border-radius: 4px;">Consultor de Ciberseguridad</li>
+                                <li style="background: rgba(0, 255, 204, 0.08); border: 1px solid rgba(0, 255, 204, 0.2); color: var(--primary); font-size: 0.78rem; padding: 3px 8px; border-radius: 4px;">Hacker Ético</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="academic-card">
+                    <div class="academic-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+                    </div>
+                    <div class="academic-info">
+                        <h4>Técnico Superior en Administración de Sistemas Informáticos en Red (ASIR)</h4>
+                        <p>Informática y Comunicaciones | Duración: 2000h | 120 ECTS</p>
+                        <span class="tag tag-asir">Grado Superior</span>
+                        
+                        <div class="profile-outcomes" style="margin-top: 15px; border-top: 1px solid var(--border); padding-top: 10px;">
+                            <span style="font-family: var(--font-mono); font-size: 0.72rem; color: var(--text-muted); display: block; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px;">Salidas Profesionales:</span>
+                            <ul style="list-style: none; padding-left: 0; display: flex; flex-wrap: wrap; gap: 6px;">
+                                <li style="background: rgba(0, 179, 255, 0.08); border: 1px solid rgba(0, 179, 255, 0.2); color: var(--secondary); font-size: 0.78rem; padding: 3px 8px; border-radius: 4px;">Administrador de Sistemas</li>
+                                <li style="background: rgba(0, 179, 255, 0.08); border: 1px solid rgba(0, 179, 255, 0.2); color: var(--secondary); font-size: 0.78rem; padding: 3px 8px; border-radius: 4px;">Técnico de Redes</li>
+                                <li style="background: rgba(0, 179, 255, 0.08); border: 1px solid rgba(0, 179, 255, 0.2); color: var(--secondary); font-size: 0.78rem; padding: 3px 8px; border-radius: 4px;">Administrador de BD</li>
+                                <li style="background: rgba(0, 179, 255, 0.08); border: 1px solid rgba(0, 179, 255, 0.2); color: var(--secondary); font-size: 0.78rem; padding: 3px 8px; border-radius: 4px;">Técnico de Comunicaciones</li>
+                                <li style="background: rgba(0, 179, 255, 0.08); border: 1px solid rgba(0, 179, 255, 0.2); color: var(--secondary); font-size: 0.78rem; padding: 3px 8px; border-radius: 4px;">Técnico en Entornos Web</li>
+                                <li style="background: rgba(0, 179, 255, 0.08); border: 1px solid rgba(0, 179, 255, 0.2); color: var(--secondary); font-size: 0.78rem; padding: 3px 8px; border-radius: 4px;">Soporte Técnico</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="certifications-section" id="certifications">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="sec-title">Certificaciones</h2>
+                <div class="title-line"></div>
+            </div>
+
+            <div class="certs-grid">
+                
+                <div class="cert-card progress-card" id="cert-ejpt">
+                    <div class="cert-badge-wrap">
+                        <div class="cert-badge-glow"></div>
+                        <div class="cert-icon-area">
+                            <svg class="cert-svg" viewBox="0 0 100 100">
+                                <polygon points="50,10 90,30 90,70 50,90 10,70 10,30" fill="none" stroke="currentColor" stroke-width="3" />
+                                <text x="50" y="55" font-family="Fira Code" font-size="14" font-weight="bold" fill="currentColor" text-anchor="middle">eJPTv2</text>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="cert-details">
+                        <div class="cert-status-badge in-progress">EN PREPARACIÓN</div>
+                        <h3 class="cert-name">eLearnSecurity Certified Junior Penetration Tester</h3>
+                        <p class="cert-issuer">eLearnSecurity / INE</p>
+                        <p class="cert-desc">
+                            Actualmente en preparación activa para la realización del examen y obtención de la certificación oficial. El plan de estudio se centra en metodologías prácticas de pruebas de penetración, escaneo de red, detección de vectores de entrada web y técnicas de explotación y post-explotación.
+                        </p>
+                    </div>
+                </div>
+
+                
+                <div class="cert-card">
+                    <div class="cert-details">
+                        <div class="cert-status-badge in-progress">CURSANDO ACTUALMENTE</div>
+                        <h3 class="cert-name">Hacking Web Avanzado</h3>
+                        <p class="cert-issuer">Hack4u Academy • Instructor: S4vitar</p>
+                        <p class="cert-desc">
+                            Especialización práctica en auditorías web activas. Resolución de <strong>269 laboratorios prácticos</strong> dominando técnicas de inyección SQL (Union, Error, Blind), Server-Side Request Forgery (SSRF), Local/Remote File Inclusion (LFI/RFI), deserializaciones inseguras, vulnerabilidades en APIs y evasión avanzada de Web Application Firewalls (WAF Bypass).
+                        </p>
+                        <a href="https://hack4u.io/curso/hacking-web" target="_blank" rel="noopener noreferrer" class="cert-web-link">Ver Ficha del Curso</a>
+                    </div>
+                </div>
+
+                
+                <div class="cert-card">
+                    <div class="cert-details">
+                        <div class="cert-status-badge in-progress">CURSANDO ACTUALMENTE</div>
+                        <h3 class="cert-name">Introducción al Hacking Ético</h3>
+                        <p class="cert-issuer">Hack4u Academy • Instructor: S4vitar</p>
+                        <p class="cert-desc">
+                            Fundamentación técnica de seguridad ofensiva. Formación práctica en reconocimiento activo con Nmap (evasión de FW y scripting), recolección de información pasiva, detección y explotación de vulnerabilidades en sistemas Linux/Windows y elaboración de informes periciales profesionales.
+                        </p>
+                        <a href="https://hack4u.io/curso/introduccion-al-hacking" target="_blank" rel="noopener noreferrer" class="cert-web-link">Ver Ficha del Curso</a>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="projects-section" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="sec-title">Proyectos y Laboratorios</h2>
+                <div class="title-line"></div>
+            </div>
+
+            
+            <div class="gallery-filters">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="hacking">Hacking Ético</button>
+                <button class="filter-btn" data-filter="forense">Análisis Forense</button>
+                <button class="filter-btn" data-filter="bastionado">Bastionado</button>
+                <button class="filter-btn" data-filter="incidentes">Incidentes</button>
+                <button class="filter-btn" data-filter="produccion">Producción Segura</button>
+            </div>
+
+            
+            <div class="projects-gallery-grid">
+                
+                <div class="gallery-card" data-category="produccion">
+                    <span class="gallery-card-badge tag-personal">Proyecto Personal</span>
+                    <h4 class="gallery-card-title">NAS Autoalojado Seguro con Mínima Exposición</h4>
+                    <p class="gallery-card-desc">
+                        Despliegue de un almacenamiento conectado en red (NAS) seguro, accesible desde cualquier ubicación externa sin exposición pública directa, eliminando la apertura de puertos en el router y centralizando el aislamiento de servicios (Nextcloud + Portainer) mediante Docker y una red VPN de malla basada en Tailscale (WireGuard).
+                    </p>
+                    <div class="gallery-card-tags">
+                        <span class="gallery-tag">Raspberry Pi 5</span>
+                        <span class="gallery-tag">Docker</span>
+                        <span class="gallery-tag">Tailscale VPN</span>
+                        <span class="gallery-tag">Nextcloud</span>
+                        <span class="gallery-tag">SSD Externo</span>
+                        <span class="gallery-tag">Hardening</span>
+                    </div>
+                </div>
+
+                
+                <div class="gallery-card" data-category="hacking">
+                    <span class="gallery-card-badge tag-hacking">Hacking Ético</span>
+                    <h4 class="gallery-card-title">Compromiso de Infraestructura y Pivoting de Red</h4>
+                    <p class="gallery-card-desc">
+                        Auditoría de penetración multietapa sobre entorno corporativo. Acceso inicial a un servidor de correo expuesto (POP3/SSH) mediante diccionario, escalada de privilegios, descifrado offline de credenciales ZIP mediante Hashcat/John the Ripper y creación de túneles SSH para pivotar hacia la red interna para comprometer subredes aisladas y portales Docker/Portainer.
+                    </p>
+                    <div class="gallery-card-tags">
+                        <span class="gallery-tag">Pentesting</span>
+                        <span class="gallery-tag">Pivoting</span>
+                        <span class="gallery-tag">SSH Tunnel</span>
+                        <span class="gallery-tag">Hashcat</span>
+                        <span class="gallery-tag">Docker</span>
+                    </div>
+                </div>
+
+                
+                <div class="gallery-card" data-category="hacking">
+                    <span class="gallery-card-badge tag-hacking">Hacking Ético</span>
+                    <h4 class="gallery-card-title">Writeups de Auditoría e Intrusión de Sistemas</h4>
+                    <p class="gallery-card-desc">
+                        Elaboración de guías técnicas detalladas (writeups) que documentan la metodología de intrusión de caja negra en múltiples entornos de entrenamiento. El proceso incluyó la fase de reconocimiento, descubrimiento de vulnerabilidades web (como subida insegura de archivos por método PUT o inyección de comandos) y fallos en gestores de contenido (CMS), la obtención de acceso mediante reverse shells, la estabilización de terminales TTY y la posterior escalada de privilegios local.
+                    </p>
+                    <div class="gallery-card-tags">
+                        <span class="gallery-tag">BlackBox</span>
+                        <span class="gallery-tag">Writeup</span>
+                        <span class="gallery-tag">Reverse Shell</span>
+                        <span class="gallery-tag">TTY</span>
+                        <span class="gallery-tag">PrivEsc</span>
+                    </div>
+                </div>
+
+                
+                <div class="gallery-card" data-category="hacking">
+                    <span class="gallery-card-badge tag-hacking">Hacking Ético</span>
+                    <h4 class="gallery-card-title">Auditoría WiFi y Despliegue de Rogue AP</h4>
+                    <p class="gallery-card-desc">
+                        Configuración de interfaz WiFi en modo monitor para interceptar tráfico de red. Despliegue manual de un AP falso duplicando el SSID objetivo, configuración del bridge de red virtual (at0), asignación de servidor DHCP y enrutamiento mediante iptables para la ejecución de ataques ARP Spoofing y DNS Spoofing.
+                    </p>
+                    <div class="gallery-card-tags">
+                        <span class="gallery-tag">WiFi Audit</span>
+                        <span class="gallery-tag">Rogue AP</span>
+                        <span class="gallery-tag">ARP Spoofing</span>
+                        <span class="gallery-tag">iptables</span>
+                    </div>
+                </div>
+
+                
+                <div class="gallery-card" data-category="hacking">
+                    <span class="gallery-card-badge tag-hacking">Hacking Ético</span>
+                    <h4 class="gallery-card-title">Simulación de Ingeniería Social y Phishing</h4>
+                    <p class="gallery-card-desc">
+                        Diseño de una campaña de phishing ética controlada. Creación de identidad falsa en RRSS, registro y despliegue de dominio en InfinityFree con redireccionamiento HTML, y uso de túneles inversos locales con Packetriot para evadir los bloqueos de seguridad de Cloudflare.
+                    </p>
+                    <div class="gallery-card-tags">
+                        <span class="gallery-tag">Phishing</span>
+                        <span class="gallery-tag">Social Eng</span>
+                        <span class="gallery-tag">Packetriot</span>
+                        <span class="gallery-tag">Cloudflare Bypass</span>
+                    </div>
+                </div>
+
+                
+                <div class="gallery-card" data-category="hacking">
+                    <span class="gallery-card-badge tag-hacking">Hacking Ético</span>
+                    <h4 class="gallery-card-title">Inteligencia de Fuentes Abiertas (OSINT)</h4>
+                    <p class="gallery-card-desc">
+                        Recolección de información pasiva y semi-pasiva sobre objetivos reales. Resolución DNS, consultas WHOIS, descubrimiento de subdominios, extracción automatizada de metadatos de archivos expuestos en internet y mapeo de relaciones mediante grafos de relación de correos electrónicos.
+                    </p>
+                    <div class="gallery-card-tags">
+                        <span class="gallery-tag">OSINT</span>
+                        <span class="gallery-tag">Recon</span>
+                        <span class="gallery-tag">Metadata</span>
+                        <span class="gallery-tag">WHOIS</span>
+                        <span class="gallery-tag">DNS</span>
+                    </div>
+                </div>
+
+                
+                <div class="gallery-card" data-category="hacking">
+                    <span class="gallery-card-badge tag-hacking">Hacking Ético</span>
+                    <h4 class="gallery-card-title">Escaneo de Vulnerabilidades y Análisis de Tráfico</h4>
+                    <p class="gallery-card-desc">
+                        Detección automatizada de vulnerabilidades sobre servidores corporativos y de red. Configuración y ejecución de escaneos en Nmap (ACK/SYN/UDP y scripts NSE), escaneos con Nessus, detección de vulnerabilidades con Nuclei y análisis de tráfico de red para identificar comportamientos maliciosos.
+                    </p>
+                    <div class="gallery-card-tags">
+                        <span class="gallery-tag">Nmap</span>
+                        <span class="gallery-tag">Nessus</span>
+                        <span class="gallery-tag">Nuclei</span>
+                        <span class="gallery-tag">Wireshark</span>
+                    </div>
+                </div>
+
+                
+                <div class="gallery-card" data-category="hacking">
+                    <span class="gallery-card-badge tag-hacking">Hacking Ético</span>
+                    <h4 class="gallery-card-title">Fuzzing Web y Enumeración de Servicios</h4>
+                    <p class="gallery-card-desc">
+                        Auditoría web inicial y enumeración de servicios heredados en sistemas. Fuzzing de directorios y ficheros web ocultos con Wfuzz y Dirb, y análisis, enumeración y explotación de múltiples protocolos y servicios de red (como SNMP, SMB, entre otros) para identificar vectores de entrada con herramientas especializadas.
+                    </p>
+                    <div class="gallery-card-tags">
+                        <span class="gallery-tag">Wfuzz</span>
+                        <span class="gallery-tag">Dirb</span>
+                        <span class="gallery-tag">Fuzzing</span>
+                        <span class="gallery-tag">SMB</span>
+                        <span class="gallery-tag">SNMP</span>
+                    </div>
+                </div>
+
+                
+                <div class="gallery-card" data-category="hacking">
+                    <span class="gallery-card-badge tag-hacking">Hacking Ético</span>
+                    <h4 class="gallery-card-title">Bastionado USB Físico y BadUSB</h4>
+                    <p class="gallery-card-desc">
+                        Simulación de intrusión física mediante inyectores de teclado automatizados (BadUSB) empleando xdotool para apertura de puertos. Configuración e instalación de políticas USBGuard a nivel de kernel para auditar, bloquear y autorizar dispositivos USB mediante listas blancas.
+                    </p>
+                    <div class="gallery-card-tags">
+                        <span class="gallery-tag">BadUSB</span>
+                        <span class="gallery-tag">USBGuard</span>
+                        <span class="gallery-tag">Linux Kernel</span>
+                        <span class="gallery-tag">xdotool</span>
+                        <span class="gallery-tag">Hardening</span>
+                    </div>
+                </div>
+
+                
+                <div class="gallery-card" data-category="forense">
+                    <span class="gallery-card-badge tag-forense">Análisis Forense</span>
+                    <h4 class="gallery-card-title">Dictámenes Periciales Forenses (Juicios)</h4>
+                    <p class="gallery-card-desc">
+                        Elaboración formal de informes periciales digitales listos para procesos judiciales. Extracción de evidencias de dispositivos Android y bases de datos SQLite locales (WhatsApp/Instagram), análisis de metadatos multimedia EXIF, e informes de ciberseguridad IOT.
+                    </p>
+                    <div class="gallery-card-tags">
+                        <span class="gallery-tag">Pericial</span>
+                        <span class="gallery-tag">SQLite</span>
+                        <span class="gallery-tag">Android</span>
+                        <span class="gallery-tag">EXIF</span>
+                        <span class="gallery-tag">IoT Security</span>
+                    </div>
+                </div>
+
+                
+                <div class="gallery-card" data-category="forense">
+                    <span class="gallery-card-badge tag-forense">Análisis Forense</span>
+                    <h4 class="gallery-card-title">Análisis Forense de Memoria Volátil (RAM)</h4>
+                    <p class="gallery-card-desc">
+                        Análisis de volcados de memoria RAM para detectar procesos sospechosos, dependencias cargadas en procesos comprometidos (DLLs), sockets y conexiones TCP/HTTPS activas hacia IPs atacantes, extracción de volcados de malware y obtención de hashes LM/NTLM.
+                    </p>
+                    <div class="gallery-card-tags">
+                        <span class="gallery-tag">RAM Forensics</span>
+                        <span class="gallery-tag">Volatility</span>
+                        <span class="gallery-tag">Malware Analysis</span>
+                        <span class="gallery-tag">LM/NTLM</span>
+                    </div>
+                </div>
+
+                
+                <div class="gallery-card" data-category="bastionado">
+                    <span class="gallery-card-badge tag-bastionado">Bastionado</span>
+                    <h4 class="gallery-card-title">Bastionado de Active Directory y Kerberos</h4>
+                    <p class="gallery-card-desc">
+                        Despliegue y configuración de seguridad en una infraestructura de dominio con Windows Server y Active Directory Domain Services. Auditoría del protocolo Kerberos mediante la simulación de ataques de fuerza bruta y extracción de tickets (AS-REP Roasting).
+                    </p>
+                    <div class="gallery-card-tags">
+                        <span class="gallery-tag">Active Directory</span>
+                        <span class="gallery-tag">Kerberos</span>
+                        <span class="gallery-tag">AS-REP Roasting</span>
+                        <span class="gallery-tag">GPO</span>
+                    </div>
+                </div>
+
+                
+                <div class="gallery-card" data-category="bastionado">
+                    <span class="gallery-card-badge tag-bastionado">Bastionado</span>
+                    <h4 class="gallery-card-title">Doble Factor de Autenticación (MFA) mediante PKI</h4>
+                    <p class="gallery-card-desc">
+                        Implementación de un esquema de seguridad y autenticación multifactor (MFA). Configuración de Active Directory Certificate Services (AD CS) como Autoridad de Certificación (CA) del dominio, creación de plantillas de certificados y configuración de llaves criptográficas USB para exigir MFA en el inicio de sesión del dominio.
+                    </p>
+                    <div class="gallery-card-tags">
+                        <span class="gallery-tag">PKI</span>
+                        <span class="gallery-tag">MFA</span>
+                        <span class="gallery-tag">AD CS</span>
+                        <span class="gallery-tag">SmartCard</span>
+                        <span class="gallery-tag">CA</span>
+                    </div>
+                </div>
+
+                
+                <div class="gallery-card" data-category="bastionado">
+                    <span class="gallery-card-badge tag-bastionado">Bastionado</span>
+                    <h4 class="gallery-card-title">Autenticación WiFi con RADIUS y Active Directory</h4>
+                    <p class="gallery-card-desc">
+                        Instalación y configuración del rol de Servicios de Acceso y Directivas de Red (NPS) en Windows Server para actuar como servidor RADIUS. Integración con Active Directory mediante grupos de seguridad para centralizar y securizar el control de acceso de clientes WiFi a redes corporativas.
+                    </p>
+                    <div class="gallery-card-tags">
+                        <span class="gallery-tag">RADIUS</span>
+                        <span class="gallery-tag">NPS</span>
+                        <span class="gallery-tag">Active Directory</span>
+                        <span class="gallery-tag">WiFi Enterprise</span>
+                    </div>
+                </div>
+
+                
+                <div class="gallery-card" data-category="bastionado">
+                    <span class="gallery-card-badge tag-bastionado">Bastionado</span>
+                    <h4 class="gallery-card-title">Autenticación Centralizada con TACACS+</h4>
+                    <p class="gallery-card-desc">
+                        Despliegue de un entorno de red virtualizado para centralizar la autenticación, autorización y registro (AAA) de administradores en equipamiento de red Cisco. Configuración de un servidor TACACS+ integrado con Active Directory y emulación en GNS3.
+                    </p>
+                    <div class="gallery-card-tags">
+                        <span class="gallery-tag">TACACS+</span>
+                        <span class="gallery-tag">AAA</span>
+                        <span class="gallery-tag">GNS3</span>
+                        <span class="gallery-tag">Cisco AAA</span>
+                    </div>
+                </div>
+
+                
+                <div class="gallery-card" data-category="bastionado">
+                    <span class="gallery-card-badge tag-bastionado">Bastionado</span>
+                    <h4 class="gallery-card-title">Hardening y Segmentación con MikroTik</h4>
+                    <p class="gallery-card-desc">
+                        Importación y despliegue del router MikroTik Cloud Hosted Router (CHR) en VirtualBox. Configuración avanzada de interfaces de red, puentes (bridges), segmentación de red LAN mediante subinterfaces, asignación de direccionamiento estático y securización mediante firewall y DHCP server.
+                    </p>
+                    <div class="gallery-card-tags">
+                        <span class="gallery-tag">MikroTik OS</span>
+                        <span class="gallery-tag">CHR</span>
+                        <span class="gallery-tag">VLAN</span>
+                        <span class="gallery-tag">Firewall</span>
+                        <span class="gallery-tag">DHCP Security</span>
+                    </div>
+                </div>
+
+                
+                <div class="gallery-card" data-category="incidentes">
+                    <span class="gallery-card-badge tag-incidentes">Incidentes</span>
+                    <h4 class="gallery-card-title">Detección de Intrusiones con Suricata IDS</h4>
+                    <p class="gallery-card-desc">
+                        Despliegue y configuración del motor de detección de intrusiones Suricata en modo IDS sobre una máquina virtual Kali Linux. Creación y carga de reglas de detección de alertas en local.rules para identificar escaneos de puertos (Nmap), tráfico anómalo e intentos de conexión no autorizados, analizando los registros de eventos generados.
+                    </p>
+                    <div class="gallery-card-tags">
+                        <span class="gallery-tag">Suricata</span>
+                        <span class="gallery-tag">IDS</span>
+                        <span class="gallery-tag">Alert Rules</span>
+                        <span class="gallery-tag">Kali Linux</span>
+                    </div>
+                </div>
+
+                
+                <div class="gallery-card" data-category="incidentes">
+                    <span class="gallery-card-badge tag-incidentes">Incidentes</span>
+                    <h4 class="gallery-card-title">Forense y Análisis de Phishing de Correo</h4>
+                    <p class="gallery-card-desc">
+                        Análisis e investigación de correos electrónicos sospechosos para identificar vectores de ataque e intentos de fraude. Examen técnico de archivos EML y cabeceras SMTP (headers) para determinar IPs de origen, saltos de servidores de correo, y verificar el cumplimiento de registros de seguridad DNS (SPF, DKIM y DMARC).
+                    </p>
+                    <div class="gallery-card-tags">
+                        <span class="gallery-tag">Phishing</span>
+                        <span class="gallery-tag">EML Analysis</span>
+                        <span class="gallery-tag">SMTP Headers</span>
+                        <span class="gallery-tag">SPF/DKIM/DMARC</span>
+                    </div>
+                </div>
+
+                
+                <div class="gallery-card" data-category="incidentes">
+                    <span class="gallery-card-badge tag-incidentes">Incidentes</span>
+                    <h4 class="gallery-card-title">Monitorización de Infraestructura con Datadog</h4>
+                    <p class="gallery-card-desc">
+                        Despliegue y aprovisionamiento del agente de Datadog en un host Linux (Kali Linux). Configuración de la plataforma para la recolección de métricas de rendimiento del sistema en tiempo real (CPU, memoria, accesos de red) y agregación de logs del servidor web Apache.
+                    </p>
+                    <div class="gallery-card-tags">
+                        <span class="gallery-tag">Datadog</span>
+                        <span class="gallery-tag">SysMonitoring</span>
+                        <span class="gallery-tag">Apache Logs</span>
+                        <span class="gallery-tag">Metrics</span>
+                    </div>
+                </div>
+
+                
+                <div class="gallery-card" data-category="incidentes">
+                    <span class="gallery-card-badge tag-incidentes">Incidentes</span>
+                    <h4 class="gallery-card-title">Centralización de Auditoría con Elastic Stack</h4>
+                    <p class="gallery-card-desc">
+                        Despliegue y configuración de Elastic Agent administrado centralmente mediante Fleet. Asociación de múltiples endpoints (Windows y Linux) para centralizar la indexación de logs de eventos, logs del sistema y auditorías en Elasticsearch con visualización en Kibana.
+                    </p>
+                    <div class="gallery-card-tags">
+                        <span class="gallery-tag">ELK Stack</span>
+                        <span class="gallery-tag">Fleet</span>
+                        <span class="gallery-tag">Elastic Agent</span>
+                        <span class="gallery-tag">Elasticsearch</span>
+                        <span class="gallery-tag">Kibana</span>
+                    </div>
+                </div>
+
+                
+                <div class="gallery-card" data-category="produccion">
+                    <span class="gallery-card-badge tag-produccion">Producción Segura</span>
+                    <h4 class="gallery-card-title">Explotación y Mitigación de OWASP Top 10</h4>
+                    <p class="gallery-card-desc">
+                        Implementación y corrección práctica a nivel de código de vulnerabilidades SQLi, XSS, CSRF, RCE, XXE e inyecciones en PHP. Aplicación de PDO, tokens CSRF, cabeceras seguras de cookies, HTTPS/TLS y logging seguro.
+                    </p>
+                    <div class="gallery-card-tags">
+                        <span class="gallery-tag">OWASP Top 10</span>
+                        <span class="gallery-tag">Secure Code</span>
+                        <span class="gallery-tag">SQLi / XSS</span>
+                        <span class="gallery-tag">PHP</span>
+                        <span class="gallery-tag">CSRF</span>
+                    </div>
+                </div>
+
+                
+                <div class="gallery-card" data-category="produccion">
+                    <span class="gallery-card-badge tag-produccion">Producción Segura</span>
+                    <h4 class="gallery-card-title">Ingeniería Inversa y Recompilación APK</h4>
+                    <p class="gallery-card-desc">
+                        Auditoría ofensiva de aplicaciones móviles. Descompilación de APKs, inyección de payloads de Meterpreter en código intermedio Smali en la clase MainActivity, y posterior recompilación, firmado y explotación.
+                    </p>
+                    <div class="gallery-card-tags">
+                        <span class="gallery-tag">Reverse Eng</span>
+                        <span class="gallery-tag">APK Decompile</span>
+                        <span class="gallery-tag">Smali</span>
+                        <span class="gallery-tag">Meterpreter</span>
+                        <span class="gallery-tag">Mobile Audit</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="contact-section" id="contact" style="border-top: 1px solid var(--border); padding-top: 80px;">
+        <div class="container">
+            <div class="section-header" style="text-align: center;">
+                <h2 class="sec-title">Contacto</h2>
+                <div class="title-line" style="margin: 16px auto 0 auto;"></div>
+            </div>
+
+            <div class="contact-single-container" style="max-width: 680px; margin: 50px auto 0 auto; text-align: center;">
+                <div class="contact-cards" style="display: flex; flex-direction: column; gap: 20px; text-align: left; max-width: 500px; margin: 0 auto;">
+                    <div class="c-card">
+                        <div class="c-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                        </div>
+                        <div class="c-details">
+                            <span>CORREO ELECTRÓNICO</span>
+                            <a href="mailto:sentinel.cyber@protonmail.com" class="contact-link">sentinel.cyber@protonmail.com</a>
+                        </div>
+                    </div>
+
+                    <div class="c-card">
+                        <div class="c-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                        </div>
+                        <div class="c-details">
+                            <span>PERFIL PROFESIONAL</span>
+                            <a href="https://www.linkedin.com/in/aar%C3%B3n-garc%C3%ADa-d%C3%ADaz-898172218/" target="_blank" rel="noopener noreferrer" class="contact-link">linkedin.com/in/aarón-garcía-díaz</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <footer class="footer">
+        <div class="container footer-content" style="justify-content: center; text-align: center;">
+            <p class="footer-copy">&copy; 2026 Aarón García Díaz. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
